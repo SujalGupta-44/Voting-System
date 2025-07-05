@@ -69,7 +69,30 @@ Project Structure Diagram
         └────────────────┘
 
 ---
+##  Database Schema
 
+### Table: `myuser`
+
+| Column      | Type    | Description            |
+|-------------|---------|------------------------|
+| aadhar      | DOUBLE  | Unique Aadhar number   |
+| name        | TEXT    | User's full name       |
+| fathername  | TEXT    | Father's name          |
+| age         | INT     | Age                    |
+| city        | TEXT    | City                   |
+| password    | TEXT    | Login password         |
+| pincode     | INT     | Pin code               |
+| address     | TEXT    | Address                |
+| mobileno    | DOUBLE  | Mobile number          |
+
+### Table: `votes`
+
+| Column      | Type     | Description           |
+|-------------|----------|-----------------------|
+| party_name  | TEXT     | Political party name  |
+| vote_count  | INTEGER  | Number of votes       |
+
+---
 ##  Screenshots
 
 ### User Registration
@@ -85,18 +108,7 @@ Project Structure Diagram
 <img src="screenshot/admin_results.png" width="700"/>
 
 ---
-
-##  Requirements
-
-Install dependencies using:
-
-```
-pip install -r requirements.txt
-```
-
----
-
-## 🧠 Technologies Used
+## Technologies Used
 
 - Python (Tkinter)
 - MySQL (WAMP/XAMPP)
@@ -104,7 +116,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 1. Run WAMP/XAMPP and start MySQL service
 2. Import `schema.sql` into phpMyAdmin
@@ -114,7 +126,24 @@ pip install -r requirements.txt
 6. Admin can view results in `result_page.py`
 
 ---
+##  Requirements
 
+Install dependencies using:
+
+```
+pip install -r requirements.txt
+```
+## 🧪 How to Run
+
+### 🛠️ Prerequisites
+- Python 3.x installed
+- MySQL (via WAMP/XAMPP server)
+-`mysql-connector-python` library
+
+```bash
+pip install mysql-connector-python
+```
+---
 ## Developed By
 
 - Sujal Gupta
