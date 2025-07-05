@@ -39,7 +39,7 @@ Voting System/
 Project Structure Diagram
                   ┌────────────────────┐
                   │     Homepage       │
-                  │ (index.py / GUI)   │
+                  │                    │
                   └────────┬───────────┘
                            │
           ┌────────────────┴──────────────┐
@@ -50,22 +50,22 @@ Project Structure Diagram
           │                                │
  ┌────────▼────────┐              ┌────────▼────────┐
  │  Registration   │              │   Admin Login   │
- │ (register.py)   │              │ (admin_login.py)│
+ │                 │              │                 │
  └────────┬────────┘              └────────┬────────┘
           │                                │
  ┌────────▼────────┐              ┌────────▼────────┐
  │   User Login    │              │   Results View  │
- │ (user_login.py) │              │(result_page.py) │
+ │                 │              │                 │
  └────────┬────────┘              └──────────────────
           │
  ┌────────▼────────┐
  │   Vote Window   │
- │(voting_page.py) │
+ │                 │
  └────────┬────────┘
           │
  ┌────────▼────────┐
  │  votes Table    │
- │(MySQL Backend)  │
+ │                 │
  └─────────────────┘
 
 
